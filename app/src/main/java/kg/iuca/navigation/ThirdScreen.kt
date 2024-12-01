@@ -10,19 +10,25 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
 
+// Composable-функция для отображения Третьего экрана
+// Принимает параметры: name (имя пользователя), age (возраст пользователя), navigateBack (функция возврата на Первый экран)
 @Composable
 fun ThirdScreen(name: String, age: Int, navigateBack: () -> Unit = {}) {
+    // Макет экрана, все элементы располагаются вертикально
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+            .fillMaxSize() // Занимает весь экран
+            .padding(16.dp), // Добавляет отступы со всех сторон
+        verticalArrangement = Arrangement.Center, // Центрирует элементы по вертикали
+        horizontalAlignment = Alignment.CenterHorizontally // Центрирует элементы по горизонтали
     ) {
+        // Текст с приветствием, включающим возраст и имя
         Text("Hello $age year old $name!", fontSize = 24.sp, fontWeight = FontWeight.Bold)
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(16.dp)) // Отступ между текстом и кнопкой
+
+        // Кнопка для возврата на Первый экран
         Button(onClick = navigateBack) {
-            Text("Go Back to First Screen")
+            Text("Go Back to First Screen") // Текст на кнопке
         }
     }
 }
