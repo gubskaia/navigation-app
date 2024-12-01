@@ -1,4 +1,4 @@
-# Navigation Demo App
+# Navigation App
 
 This is a simple Android application showcasing navigation between three screens using Jetpack Compose and Navigation Component.
 
@@ -6,7 +6,6 @@ This is a simple Android application showcasing navigation between three screens
 
 - Navigation between three composable screens (First, Second, and Third)
 - Data passing between screens (Name and Age)
-- Modern UI built with Jetpack Compose
 
 ## Demo (gif)
 <img src="/app/src/main/res/assets/demo.gif" alt="Example GIF" width="200" />
