@@ -1,0 +1,67 @@
+/build
+
+# Android Studio specific files
+.idea/
+.gradle/
+local.properties
+/.caches/
+/captures/
+/.externalNativeBuild/
+/outputs/
+/generated/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Gradle files
+.gradle/
+/build/
+
+# Android specific folders
+build/
+app/build/
+*/build/
+
+# Jetpack Compose preview cache
+*.previews/
+
+# Other
+.DS_Store
+*.log
+*.pyc
+*.swp
+*.iml
+*.hprof
+
+# Kotlin specific
+*.kt~
+*.kts~
+
+# Miscellaneous
+*.apk
+*.aar
+*.ap_
+
+# IntelliJ IDEA specific files
+*.iws
+*.iml
+*.ipr
+
+# User-specific configurations
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# Local run configurations
+.idea/runConfigurations/
+
+# Android Profiling
+*.hprof
+
+# Git specific
+*.orig
